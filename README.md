@@ -76,6 +76,26 @@ by
 $form_state['redirect'] = t('search') . '/'. $keys;
 ```
 
+AND
+
+Replace
+```
+$output = drupal_get_form('search_form', NULL, $keys, $type);
+```
+by 
+```
+$output = drupal_get_form('search_form', NULL, $keys);
+```
+
+Replace
+```
+return drupal_get_form('search_form', NULL, empty($keys) ? '' : $keys, $type);
+```
+by
+```
+return drupal_get_form('search_form', NULL, empty($keys) ? '' : $keys);
+```
+
 ## Add translations for "search"
 
 1. in a browser, load the search page for every language. Examples: 'fr/search', 'de/search'.

@@ -41,13 +41,13 @@ function search_view() {
     }
 
     // Construct the search form.
-    $output = drupal_get_form('search_form', NULL, $keys, $type);
+    $output = drupal_get_form('search_form', NULL, $keys);
     $output .= $results;
 
     return $output;
   }
 
-  return drupal_get_form('search_form', NULL, empty($keys) ? '' : $keys, $type);
+  return drupal_get_form('search_form', NULL, empty($keys) ? '' : $keys);
 }
 
 /**
