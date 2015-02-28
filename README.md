@@ -91,3 +91,6 @@ function phptemplate_preprocess_page(&$vars) {
 	}
 }
 ```
+
+## Reference
+http://jeromejaglale.com/doc/drupal/search_url_localization
